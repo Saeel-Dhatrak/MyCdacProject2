@@ -1,0 +1,57 @@
+
+
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+      <div class="form">
+
+  <!--      <div class="form-group">
+          <br>
+          <small class="text-danger">{{msg}}</small>
+          <br>
+          
+          <label for="">recordId</label>
+          <input [(ngModel)]="record.recordId" type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="">Vehicle Id</label>
+          <input [(ngModel)]="vehicle.vehicleId" type="text" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="">Service Id</label>
+            <input [(ngModel)]="servicetype.serviceId" type="text" class="form-control">
+          </div>  
+        -->
+          <div class="form-group">
+            <label for="">Problem Description</label>
+            <input [(ngModel)]="record.problemDescription" type="text" class="form-control">
+          </div>   
+         <!--
+            <div class="form-group">
+            <label for="">Booking Date</label>
+            <input [(ngModel)]="record.bookingDate" type="text" class="form-control">
+          </div>    
+        -->
+          <!--<div class="form-group">
+            <label for="">Price</label>
+            <input [(ngModel)]="servicetype.price" type="text" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="">Number Plate</label>
+            <input [(ngModel)]="vehicle.numberPlate" type="text" class="form-control">
+          </div>
+        -->
+        <div class="form-group">
+          <button (click)="onSubmit()" class="btn btn-success">Submit</button>
+          
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4"></div>
+  </div>
+  <!--  recordId:number
+    billingDate:Date
+    bookingDate:Date
+    problemDescription:string
+    status:String
+    totalCost:number-->

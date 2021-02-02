@@ -1,0 +1,11 @@
+.jumbotron {
+background:url("G:\AngularLab\final\src\assets\Images\syvback.jpg") no-repeat ;
+/*padding-top:100px;*/
+background-size:cover;
+max-width: 100%;
+height: auto;
+}
+h1,p{
+    color:Tomato; 
+    text-shadow: 2px 2px 4px #000000;
+}

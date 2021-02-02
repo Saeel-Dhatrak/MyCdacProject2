@@ -1,0 +1,44 @@
+
+<div class="container">
+    <h2> List of all vehicle registered in our services...</h2>
+           
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>RecordId</th>
+          <th>Booking Date</th>
+          <th>Billing Date</th>
+          <th>Problem Description</th>
+          <th>Total Cost</th>
+          <th>Status</th>
+          <th>Actions</th>  
+<!-- recordId:number
+    billingDate:Date
+    bookingDate:Date
+    problemDescription:string
+    status:String
+    totalCost:number-->
+          
+        </tr>
+      </thead>
+      <tbody *ngFor="let record of records">
+        <tr>
+          <td>{{record.recordId}}</td>
+          <td>{{record.bookingDate}}</td>
+          <td>{{record.billingDate}}</td>
+          <td>{{record.problemDescription}}</td>
+          <td>{{record.totalCost}}</td>
+          <td>{{record.status}}</td>
+          <td><button (click)="onDeleteRecord(record.recordId)" style="margin-left: 10px;" class="btn btn-danger btn-sm">Delete</button>
+              <button (click)="onUpdateRecord(record.recordId)" style="margin-left: 15px;" class="btn btn-success btn-sm">Update</button>
+         </td>
+        </tr>
+        
+
+    </tbody>
+  </table>
+  <button (click)="back()" type="button" class="btn btn-primary" >Back</button>&nbsp;&nbsp;
+  <button (click)="logout()" type="button" class="btn btn-danger" >Logout</button>
+
+
+</div>

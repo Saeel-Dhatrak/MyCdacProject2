@@ -1,0 +1,39 @@
+<br>
+<div class="container">
+    <h3> List of all customers registered in our services...</h3>
+    <br>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>CustomerId</th>
+          <th>Name</th>
+          <th>UserName</th>
+          <th>Password</th>
+          <th>Address</th>
+          <th>Phone Number</th>
+          <th>Actions</th>  
+          
+        </tr>
+      </thead>
+      <tbody *ngFor="let customer of customers">
+        <tr>
+          <td>{{customer.customerId }}</td>
+          <td>{{customer.name }}</td>
+          <td>{{customer.username }}</td>
+          <td>{{customer.password}}</td>
+          <td>{{customer.address}}</td>
+          <td>{{customer.phoneNumber}}</td>
+          <td><button (click)="onDeleteCustomer(customer.customerId)" style="margin-left: 10px;" class="btn btn-danger btn-sm">Delete</button>
+            <button (click)="onUpdateCustomer(customer.customerId)" style="margin-left: 15px;" class="btn btn-success btn-sm">Update</button>
+       </td>
+        </tr>
+        
+
+    </tbody>
+  </table>
+  <button (click)="back()" type="button" class="btn btn-primary" >Back</button>&nbsp;&nbsp;
+  <button (click)="logout()" type="button" class="btn btn-danger" >Logout</button>
+
+
+</div>
+

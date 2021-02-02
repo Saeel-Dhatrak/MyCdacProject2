@@ -1,0 +1,36 @@
+<br>
+<div class="container">
+    <h3> List of all Staffs registered in our services...</h3>
+    <br>       
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>StaffId</th>
+          <th>Name</th>
+          <th>UserName</th>
+          <th>Password</th>
+          <th>Phone Number</th>
+          <th>Actions</th>  
+          
+        </tr>
+      </thead>
+      <tbody *ngFor="let staff of staffs">
+        <tr>
+          <td>{{staff.staffId }}</td>
+          <td>{{staff.name }}</td>
+          <td>{{staff.username }}</td>
+          <td>{{staff.password}}</td>
+          <td>{{staff.phoneNumber}}</td>
+          <td><button (click)="onDeleteStaff(staff.staffId)" style="margin-left: 10px;" class="btn btn-danger btn-sm">Delete</button>
+            <button (click)="onUpdateStaff(staff.staffId)" style="margin-left: 15px;" class="btn btn-success btn-sm">Update</button>
+       </td>
+        </tr>
+        
+
+    </tbody>
+  </table>
+ <button (click)="addStaff()" type="button" class="btn btn-primary" >Add Staff</button> &nbsp;&nbsp;
+ <button (click)="back()" type="button" class="btn btn-primary" >Back</button> &nbsp;&nbsp;
+ <button (click)="logout()" type="button" class="btn btn-danger" >Logout</button>
+
+</div>

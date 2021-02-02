@@ -1,0 +1,37 @@
+<br>
+<p><b>&nbsp;&nbsp;Welcome &nbsp; {{username}}<s></s></b></p> &nbsp;
+<br><br><br>
+<div class="container">
+  <div class="vertical-center">
+      <button  type="button" class="btn btn-secondary btn-lg" >Your Details</button>&nbsp;&nbsp;
+      
+      <button (click)="logout()" type="button" class="btn btn-rounded btn-outline-danger btn-lgr" >Logout<i class="fas fa-sign-out-alt pl-1"></i></button>
+  </div>
+</div>
+<br>
+
+<br>
+<table class="table table-striped">
+  
+  <thead>
+    <tr>
+      <th>StaffId</th>
+      <th>Name</th>
+      <th>Phone Number</th>
+      <th>UserName</th>
+      <th>Password</th>
+      
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>{{staff.staffId}}</td>
+      <td>{{staff.name}}</td>
+      <td>{{staff.phoneNumber}}</td>
+      <td>{{staff.username}}</td>
+      <td>{{staff.password}}</td>
+      
+    </tr>
+</tbody>
+</table>

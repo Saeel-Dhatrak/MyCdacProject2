@@ -1,0 +1,79 @@
+<br>
+<p><b>&nbsp;&nbsp;Welcome &nbsp; <s>{{username}}</s></b></p> &nbsp;
+<button routerLink="/choose-servicing-type" type="button" class="btn btn-primary btn-lgr"><i class="fa fa-heart"></i>New Booking</button>
+
+<br><br><br>
+<div class="container">
+  <div class="vertical-center">
+      <button  type="button" class="btn btn-secondary btn-lg" >Your Details</button>&nbsp;&nbsp;
+      
+      <button (click)="logout()" type="button" class="btn btn-rounded btn-outline-danger btn-lgr" >Logout<i class="fas fa-sign-out-alt pl-1"></i></button>
+  </div>
+</div>
+<br>
+
+<br>
+<table class="table table-striped">
+  
+  <thead>
+    <tr>
+      <th>CustomerId</th>
+      <th>Name</th>
+      <th>UserName</th>
+      <th>Password</th>
+      <th>Address</th>
+      <th>Phone Number</th>
+      <th>Actions</th>  
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>{{customers.customerId}}</td>
+      <td>{{customers.name}}</td>
+      <td>{{customers.username}}</td>
+      <td>{{customers.password}}</td>
+      <td>{{customers.address}}</td>
+      <td>{{customers.phoneNumber}}</td>
+      <td><button  (click)="onDeleteCustomer(customers.customerId)"  style="margin-left: 10px;" class="btn btn-danger btn-sm">Delete</button>
+          <button  (click)="onUpdateCustomer(customers.customerId)"  style="margin-left: 15px;" class="btn btn-success btn-sm">Update</button>
+     </td>
+    </tr>
+    
+
+</tbody>
+</table>
+<!--------------------------------------------------Vehicle --------------------------->
+
+
+
+<table class="table table-striped">
+  
+  <thead>
+    <tr>
+      <th>VehicleId</th>
+      <th>Vehicle Company</th>
+      <th>Model</th>
+      <th>Number Plate</th>
+      <th> customerId"</th>
+      <th>Actions</th>    
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor v of vehicle;>
+      <td>{{vehicle.vehicleId}}</td>
+      <td>{{vehicle.vehicleCompany}}</td>
+      <td>{{vehicle.model}}</td>
+      <td>{{vehicle.numberPlate}}</td>
+      <td>{{vehicle.customerId}}</td>
+      <td><button  (click)="onDeleteVehicle(vehicle.vehicleId)"  style="margin-left: 10px;" class="btn btn-danger btn-sm">Delete</button>
+          <button  (click)="onUpdateVehihcle(vehicle.vehicleId)"  style="margin-left: 15px;" class="btn btn-success btn-sm">Update</button>
+     </td>
+    </tr>
+</tbody>
+</table>
+<button  routerLink="/vehicle-register" type="button" class="btn btn-info">Add New Vehicle</button>
+
+
+
+<!--  (click)="allVehiclesDetails()" (click)="serviceTypeDetails()" -->

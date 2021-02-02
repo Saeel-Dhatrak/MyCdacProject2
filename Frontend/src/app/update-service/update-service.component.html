@@ -1,0 +1,76 @@
+
+
+<div class="card">
+    <div class="card-header">
+      <h4>Update Service</h4>
+    </div>
+    <!--
+   <div class="card-body">
+      <form #addUserForm="ngForm" (ngSubmit)="updateStaff()">
+  -->
+        <div class="row">
+            <!--
+            <div class="col-md-6">
+              <img width="100%" height="100%" src="{{product['imageUrl']}}" alt="{{product['imageUrl']}}">
+            </div>
+            -->
+
+
+          <div class="col-md-6">
+
+            <div class="form-group">
+                <label for="serviceId">ID
+                </label>
+                <input name="serviceId" [(ngModel)]="servicetype.serviceId" type="text" class="form-control">
+              </div>
+
+            <div class="form-group">
+              <label for="price">Price
+              </label>
+              <input name="price" [(ngModel)]="servicetype.price"  placeholder={{servicetype.price}} type="text" class="form-control">
+            </div>
+        
+            <div class="form-group">
+              <label for="type">Type</label>
+              <input name="type" [(ngModel)]="servicetype.type" type="text" placeholder={{servicetype.type}} class="form-control">
+            </div>
+
+
+                
+
+              <!--
+            <div class="form-group">
+            <label for="productState">State</label>
+            <input name="productState"[(ngModel)]="product.productState" class="form-control">
+            </div>  
+
+            <div class="form-group">
+              <label for="category">Category</label>
+              <input name= "category"[(ngModel)]="product.category" class="form-control">
+            </div>
+        -->
+            <!--
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea name="description" [(ngModel)]="product.description" rows="4" class="form-control"></textarea>
+                </div>
+              -->
+
+             <!--   
+            <div class="form-group">
+                <label for="imageURL">ImageURL</label>
+                <input name="imageUrl"  [(ngModel)]="product.imageUrl"  class="form-control">
+                </div>
+            -->   
+  
+        <div class="form-group">
+          <button (click)="updateService()" type="submit"  class="btn btn-success">Update</button>
+          <a style="margin-left: 10px;" routerLink="/service-type" class="btn btn-danger">Cancel</a>   
+        </div>
+
+    </div>
+</div>
+    <!-- </form>
+     </div>--> 
+    </div>
+

@@ -1,0 +1,85 @@
+
+
+<div class="card">
+    <div class="card-header">
+      <h4>Update Staff</h4>
+    </div>
+    <!--
+   <div class="card-body">
+      <form #addUserForm="ngForm" (ngSubmit)="updateStaff()">
+  -->
+        <div class="row">
+            <!--
+            <div class="col-md-6">
+              <img width="100%" height="100%" src="{{product['imageUrl']}}" alt="{{product['imageUrl']}}">
+            </div>
+            -->
+
+
+          <div class="col-md-6">
+
+            <div class="form-group">
+                <label for="staffId">ID
+                </label>
+                <input name="staffId" [(ngModel)]="staff.staffId" type="text" class="form-control">
+              </div>
+
+            <div class="form-group">
+              <label for="name">Name
+              </label>
+              <input name="name" [(ngModel)]="staff.name"  placeholder={{staff.name}} type="text" class="form-control">
+            </div>
+        
+            <div class="form-group">
+              <label for="username">Username</label>
+              <input name="username" [(ngModel)]="staff.username" type="text" placeholder={{staff.username}} class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input name="password" [(ngModel)]="staff.password" placeholder={{staff.password}} type="text" class="form-control">
+              </div>
+
+            <div class="form-group">
+                <label for="phoneNumber">Phone Number</label>
+                <input name="phoneNumber" [(ngModel)]="staff.phoneNumber" placeholder={{staff.phoneNumber}} type="text" class="form-control">
+              </div>
+
+              
+
+              <!--
+            <div class="form-group">
+            <label for="productState">State</label>
+            <input name="productState"[(ngModel)]="product.productState" class="form-control">
+            </div>  
+
+            <div class="form-group">
+              <label for="category">Category</label>
+              <input name= "category"[(ngModel)]="product.category" class="form-control">
+            </div>
+        -->
+            <!--
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea name="description" [(ngModel)]="product.description" rows="4" class="form-control"></textarea>
+                </div>
+              -->
+
+             <!--   
+            <div class="form-group">
+                <label for="imageURL">ImageURL</label>
+                <input name="imageUrl"  [(ngModel)]="product.imageUrl"  class="form-control">
+                </div>
+            -->   
+  
+        <div class="form-group">
+          <button (click)="updateStaff()" type="submit"  class="btn btn-success">Update</button>
+          <a style="margin-left: 10px;" routerLink="/staff-list" class="btn btn-danger">Cancel</a>   
+        </div>
+
+    </div>
+</div>
+    <!-- </form>
+     </div>--> 
+    </div>
+

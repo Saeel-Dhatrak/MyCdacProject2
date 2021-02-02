@@ -1,0 +1,33 @@
+<br>
+<div class="container">
+    <h3> List of all services...</h3>
+    <br>       
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>ServiceId</th>
+          <th>Type</th>
+          <th>Estimated Time</th>
+          <th>Price</th>
+          <th>Actions</th>  
+          
+        </tr>
+      </thead>
+      <tbody *ngFor="let servicetype of servicetypes">
+        <tr>
+          <td>{{servicetype.serviceId }}</td>
+          <td>{{servicetype.type }}</td>
+          <td>{{servicetype.estimatedTime }}</td>
+          <td>{{servicetype.price}}</td>
+          <td><button (click)="onDeleteServiceType(servicetype.serviceId)" style="margin-left: 10px;" class="btn btn-danger btn-sm">Delete</button>
+            <button (click)="onUpdateServiceType()" style="margin-left: 15px;" class="btn btn-success btn-sm">Update</button>
+       </td>
+        </tr>
+        
+
+    </tbody>
+  </table>
+ <button (click)="back()" type="button" class="btn btn-primary" >Back</button>&nbsp;&nbsp;
+ <button (click)="logout()" type="button" class="btn btn-danger" >Logout</button>
+
+</div>

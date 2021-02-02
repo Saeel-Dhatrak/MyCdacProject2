@@ -1,0 +1,37 @@
+<br>
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+      <div class="form">
+        <div class="form-group">
+          <br>
+          <small class="text-danger">{{msg}}</small>
+         <br>
+         <label for="">Staff Id</label>
+       <input name="staffId" [(ngModel)]="staff.staffId" type="number" class="form-control">
+     </div>
+     <div class="form-group">
+         <label for="">Name</label>
+       <input name="name" [(ngModel)]="staff.name" type="text" class="form-control">
+     </div>
+     <div class="form-group">
+         <label for="">Username</label>
+         <input name="username" [(ngModel)]="staff.username" type="text" class="form-control">
+       </div>
+       <div class="form-group">
+         <label for="">Password</label>
+         <input name="password" [(ngModel)]="staff.password" type="text" class="form-control">
+       </div>
+     <div class="form-group">
+      <div class="form-group">
+        <label for="">Phone Number</label>
+        <input name="phoneNumber" [(ngModel)]="staff.phoneNumber" type="text" class="form-control">
+      </div>
+    <div class="form-group">
+     <button (click)="onStaffRegister()" class="btn btn-success">Register</button>
+       
+     </div>
+   </div>
+  </div>
+  <div class="col-md-4"></div>
+  </div>
